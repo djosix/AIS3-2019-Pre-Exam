@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+
+  # Hidden
+  # AIS3{4r3_y0u_4_fr0n73nd_g33k?}
+  hidden:
+    image: nginx:1.15.10
+    ports:
+      - 10101:80
+    volumes:
+      - ./hidden/www/dist:/usr/share/nginx/html:ro
+
+  # tokeeeeen
+  # AIS3{1_d0n7_w4n7_70_wr173_j4v45cr1p7_4nym0r3}
+  tokeeeeen:
+    build: ./tokeeeeen
+    ports:
+      - 10102:3000
+    environment:
+      FLAG: 'AIS3{1_d0n7_w4n7_70_wr173_j4v45cr1p7_4nym0r3}'
+      HOST: '0.0.0.0'
+      PORT: 3000
+
+  # d1v1n6
+  # AIS3{600d_j0b_bu7_7h15_15_n07_7h3_3nd}
+  d1v1n6:
+    build: ./d1v1n6
+    ports:
+      - 10103:80
+    volumes:
+      - ./d1v1n6/www:/var/www/html/
+    networks:
+      - internal
+
+  # d1v1n6 d33p3r
+  # AIS3{y0u_4r3_4bl3_70_d1v3_d33p3r_n3x7_71m3}
+  d1v1n6_d33p3r:
+    build: d1v1n6_d33p3r
+    networks:
+      - internal
+  
+  # Crystal Maze
+  # AIS3{4R3_Y0U_RUNN1NG_45_F45T_45_CRY5T4L?}
+  crystal_maze:
+    build: ./crystal_maze
+    command: /server/server 3000
+    ports:
+      - 10202:3000
+    
+  # Mind Reading
+  # AIS3{YOU_REALLY_DID_A_GOOD_JOB}
+
+networks:
+  internal:
+    driver: bridge

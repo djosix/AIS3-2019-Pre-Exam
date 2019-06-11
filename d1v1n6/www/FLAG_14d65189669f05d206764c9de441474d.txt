@@ -1,0 +1,17 @@
+                 ^`.                     o
+ ^_              \  \                  o  o
+ \ \             {   \                 o
+ {  \           /     `~~~--__
+ {   \___----~~'              `~~-_     ______          _____
+  \                         /// a  `~._(_||___)________/___
+  / /~~~~-, ,__.    ,      ///  __,,,,)      o  ______/    \
+  \/      \/    `~~~;   ,---~~-_`~= \ \------o-'            \
+                   /   /            / /
+                  '._.'           _/_/
+                                  ';|\
+Your flag:
+  AIS3{600d_j0b_bu7_7h15_15_n07_7h3_3nd}
+
+Hints for d1v1n6 d33p3r:
+- Find the other web server in the internal network.
+- Scanning is forbidden and not necessary.

@@ -1,0 +1,8 @@
+*.h5
+*.pyc
+.DS_Store
+
+node_modules/
+.cache/
+dist/
+node_modules/

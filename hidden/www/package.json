@@ -1,0 +1,22 @@
+{
+  "name": "hidden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.pug",
+  "scripts": {
+    "dev": "parcel index.pug",
+    "build": "parcel build index.pug --no-source-maps"
+  },
+  "author": "djosix",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
+    "parcel": "^1.12.3",
+    "pug": "^2.0.3",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "vue-hot-reload-api": "^2.3.3"
+  }
+}
